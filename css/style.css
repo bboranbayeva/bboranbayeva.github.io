@@ -7328,7 +7328,7 @@ button.close {
 }
 /* Template Style =========== */
 body {
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Georgia", arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 26px;
@@ -7451,14 +7451,14 @@ h1, h2, h3, h4, h5, h6 {
 .bibi-intro .intro-lead {
   font-size: 50px;
   line-height: 60px;
-  font-family: "Roboto Slab", arial, sans-serif;
+  font-family: "Rockwell", arial, sans-serif;
 }
 
 .section-lead {
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 1em;
-  font-family: "Roboto Slab", arial, sans-serif;
+  font-family: "Rockwell", arial, sans-serif;
 }
 
 #bibi-portfolio {
@@ -7536,7 +7536,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #bibi-portfolio .bibi-portfolio-item .bibi-portfolio-description h2 {
-  font-family: "Roboto Slab", arial, sans-serif;
+  font-family: "Rockwell", arial, sans-serif;
   font-size: 30px;
   line-height: 34px;
   font-weight: 300;
@@ -8168,7 +8168,7 @@ pre {
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Roboto Slab", arial, sans-serif;
+  font-family: "Rockwell", arial, sans-serif;
 }
 .owl-carousel-fullwidth .item .bibi-owl-text .bibi-sub-lead {
   font-size: 30px;
