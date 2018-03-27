@@ -108,12 +108,48 @@
 		}
 	};
 
+	// Page Nav
+	var clickMenu = function() {
+		var topVal = ( $(window).width() < 769 ) ? 0 : 58;
+		$(window).resize(function(){
+			topVal = ( $(window).width() < 769 ) ? 0 : 58;
+		});
+		if ( $(this).attr('href') != "#") {
+			$('#bibi-navbar a:not([class="external"])').click(function(event){
+				var section = $(this).data('nav-section');
+				if ( $('div[data-section="' + section + '"]').length ) {
+					$('html, body').animate({
+			        	scrollTop: $('div[data-section="' + section + '"]').offset().top - topVal
+			    	}, 500);
+			   }
+			   event.preventDefault();
+			});
+		}
+	};
 
+	// Reflect scrolling in navigation
+	var navActive = function(section) {
+		$('#bib-main-nav #bib-header li').removeClass('active');
+		$('#bib-main-nav #bib-header').find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+	};
 
-
-
-
-
+	var navigationSection = function() {
+		var $section = $('div[data-section]');
+		$section.waypoint(function(direction) {
+		  	if (direction === 'down') {
+		    	navActive($(this.element).data('section'));
+		  	}
+		}, {
+	  		offset: '150px'
+		});
+		$section.waypoint(function(direction) {
+	  	if (direction === 'up') {
+	    	navActive($(this.element).data('section'));
+	  	}
+		}, {
+		 	offset: function() { return -$(this.element).height() + 155; }
+		});
+	};
 
 
 	$(function(){
@@ -122,8 +158,9 @@
 		animateBox();
 		teamWayPoint();
 		featureIconsWayPoint();
-
-
+		clickMenu();
+		navActive();
+		navigationSection();
 
 	});
 

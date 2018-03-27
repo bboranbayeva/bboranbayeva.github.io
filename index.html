@@ -51,7 +51,7 @@
 	<body>
 
 	<header id="bibi-header" role="banner">
-		<nav class="navbar navbar-default" role="navigation">
+		<nav id="bibi-main-nav" class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
@@ -62,9 +62,10 @@
 						</div>
 						<div id="bibi-navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="index.html"><span>Home <span class="border"></span></span></a></li>
-								<li><a href="right-sidebar.html"><span>Right Sidebar <span class="border"></span></span></a></li>
-								<li><a href="left-sidebar.html"><span>Left Sidebar <span class="border"></span></span></a></li>
+								<li class="active"><a href="#" data-nav-section="home"><span>Home <span class="border"></span></span></a></li>
+								<li><a href="#" data-nav-section="project1"><span>Project 1<span class="border"></span></span></a></li>
+								<li><a href="#" data-nav-section="project2"><span>Project 2<span class="border"></span></span></a></li>
+								<li><a href="#" data-nav-section="project3"><span>Project 3<span class="border"></span></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -76,7 +77,7 @@
 
 
 	<div id="bibi-main">
-		<div class="bibi-intro text-center">
+		<div class="bibi-intro text-center" data-section="home">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
@@ -88,10 +89,11 @@
 		</div>
 
 		<div id="bibi-portfolio">
-			<div class="bibi-portfolio-item ">
+			<div class="bibi-portfolio-item" data-section="project1">
 				<div class="bibi-portfolio-figure animate-box" style="background-image: url(images/DSC02628.jpg);"></div>
 				<div class="bibi-portfolio-description">
 					<h2>Project - Medical Aid UAV for Rwanda</h2>
+					<h5>September - December, 2016, Vancouver, Canada</h5>
 					<p>
 						One of the world problems touches people who live in the rural areas of developing countries receiving little or very poor health care.
 						A significant impediment is the lack of a reliable transport network for getting patient speciments to a suitable lab for analysis.
@@ -100,10 +102,10 @@
 						speed, and accuracy of diagnosis of illnesses in the rural areas by designing a solution that takes to the skies, and can be made by the people,
 					  for the people.
 					</p>
-					<p><a href="#" class="btn btn-primary">Read the casetudy</a></p>
+					<p><a href="projects/project1.html" class="btn btn-primary">Read the casetudy</a></p>
 				</div>
 			</div>
-			<div class="bibi-portfolio-item bibi-img-right">
+			<div class="bibi-portfolio-item bibi-img-right" data-section="project2">
 				<div class="bibi-portfolio-figure animate-box" style="background-image: url(images/DSC02779.jpg);"></div>
 				<div class="bibi-portfolio-description">
 					<h2>Project - Fireboat "Hardship"</h2>
@@ -114,7 +116,7 @@
 					<p><a href="#" class="btn btn-primary">Read the casetudy</a></p>
 				</div>
 			</div>
-			<div class="bibi-portfolio-item ">
+			<div class="bibi-portfolio-item " data-section="project3">
 				<div class="bibi-portfolio-figure animate-box" style="background-image: url(images/DSC02759.jpg);"></div>
 				<div class="bibi-portfolio-description">
 					<h2>Project - Regenerator "Whiplash"</h2>
@@ -126,7 +128,7 @@
 					<p><a href="#" class="btn btn-primary">Read the casetudy</a></p>
 				</div>
 			</div>
-			<div class="bibi-portfolio-item bibi-img-right">
+			<div class="bibi-portfolio-item bibi-img-right" data-section="project4">
 				<div class="bibi-portfolio-figure animate-box" style="background-image: url(images/DSC02761.jpg);"></div>
 				<div class="bibi-portfolio-description">
 					<h2>Project Fourth</h2>
