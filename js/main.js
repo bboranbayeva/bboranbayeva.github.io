@@ -16,13 +16,13 @@
 
 	// Burger Menu
 	var burgerMenu = function() {
-		$('body').on('click', '.js-bibi-nav-toggle', function(){
+		$('body').on('click', '.js-bibi-nav-toggle', function(event){
 			if ( $('#bibi-navbar').is(':visible') ) {
 				$(this).removeClass('active');
 			} else {
 				$(this).addClass('active');
 			}
-
+			event.preventDefault();
 		});
 	};
 
@@ -51,7 +51,6 @@
 				var el = $(this);
 
 				setTimeout ( function () {
-					console.log('yaya');
 					el.addClass('fadeInUp animated');
 				},  k * 200, 'easeInOutExpo' );
 
@@ -114,7 +113,7 @@
 		$(window).resize(function(){
 			topVal = ( $(window).width() < 769 ) ? 0 : 58;
 		});
-		if ( $(this).attr('href') != "#") {
+		if ( $(this).attr('href') !== "#") {
 			$('#bibi-navbar a:not([class="external"])').click(function(event){
 				var section = $(this).data('nav-section');
 				if ( $('div[data-section="' + section + '"]').length ) {
@@ -129,8 +128,8 @@
 
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
-		$('#bib-main-nav #bib-header li').removeClass('active');
-		$('#bib-main-nav #bib-header').find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+		$('#bibi-main-nav #bibi-navbar li').removeClass('active');
+		$('#bibi-main-nav #bibi-navbar').find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
 	};
 
 	var navigationSection = function() {
