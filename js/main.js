@@ -77,8 +77,8 @@
 
 	// Animate Feature
 	var animateFeatureIcons = function() {
-		if ( $('#bibi-services').length > 0 ) {
-			$('#bibi-services .to-animate').each(function( k ) {
+		if ( $('#bibi-skills').length > 0 ) {
+			$('#bibi-skills .to-animate').each(function( k ) {
 
 				var el = $(this);
 
@@ -90,8 +90,8 @@
 		}
 	};
 	var featureIconsWayPoint = function() {
-		if ( $('#bibi-services').length > 0 ) {
-			$('#bibi-services').waypoint( function( direction ) {
+		if ( $('#bibi-skills').length > 0 ) {
+			$('#bibi-skills').waypoint( function( direction ) {
 
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
