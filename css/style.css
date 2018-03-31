@@ -7854,23 +7854,30 @@ pre {
 }
 
 .bibi-contact-icon {
-  background: #cccccc;
+  background: #ddd;
   border-radius: 3em;
-  -moz-border-radius: 3em;
-  -webkit-border-radius: 3em;
-  color: #ffffff;
+
   display: inline-block;
   font-weight: bold;
   font-size: 20px;
   line-height: 6em;
   width: 6.0em;
+  color: #fbfbfb;
   margin-right: 5px;
   margin-bottom: 15px;
   text-align: center;
 }
 
-.bibi-contact-icon h3 {
+.bibi-contact-icon:hover {
+  background-color: #ccc;
 
+  border: 2px solid #eee;
+
+  transition: border 0.6s linear;
+}
+
+.bibi-contact-identifier {
+  color: #e32929;
 }
 
 #bibi-footer {
