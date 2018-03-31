@@ -7849,7 +7849,6 @@ pre {
 
 #bibi-contact {
   padding: 5em 0;
-  background: #fafafa;
   line-height: 1.5;
 }
 
@@ -7880,10 +7879,10 @@ pre {
   color: #e32929;
 }
 
+
 #bibi-footer {
   padding: 5em 0;
-  background: #fafafa;
-  background: #fff;
+  background: #f1f1f1;
   line-height: 1.5;
 }
 

@@ -92,3 +92,36 @@
     height: 400px;
   }
 }
+
+#bibi-interests {
+  clear: both;
+  padding: 7em 0;
+  background: #fafafa;
+}
+@media screen and (max-width: 768px) {
+  #bibi-interests {
+    padding: 4em 0;
+  }
+}
+#bibi-interests .bibi-interest {
+  margin-bottom: 20px;
+}
+#bibi-interests .bibi-interest figure {
+  margin-bottom: 30px;
+}
+#bibi-interests .bibi-interest h3 {
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+#bibi-interests .bibi-interest h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #e32929;
+}
