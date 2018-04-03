@@ -7350,7 +7350,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Rockwell", arial, sans-serif;
+  font-family: "Robo Slab", arial, sans-serif;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 300;
@@ -7399,7 +7399,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #bibi-header > .navbar li {
-  font-family: "Rockwell", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
 }
 #bibi-header > .navbar li a {
   font-size: 16px;
@@ -7422,7 +7422,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
   display: block;
   padding-bottom: 1em;
-  font-family: "Rockwell", arial, sans-serif;
+  font-family: "Robo Slab", arial, sans-serif;
   background: #e32929;
   color: #fff;
 }
@@ -7476,8 +7476,6 @@ h1, h2, h3, h4, h5, h6 {
   #bibi-portfolio {
     margin-bottom: 4em;
   }
-}
-@media screen and (max-width: 1200px) {
   #bibi-portfolio {
     padding-left: 0em;
     padding-right: 0em;
@@ -7494,6 +7492,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 @media screen and (max-width: 768px) {
+  #bibi-portfolio {
+    padding-top: 7em;
+  }
   #bibi-portfolio .bibi-portfolio-item {
     display: block;
   }
@@ -7559,11 +7560,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #bibi-team {
   clear: both;
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #bibi-team {
-    padding: 4em 0;
+    padding: 6em 0;
   }
 }
 #bibi-team .bibi-staff {
@@ -7596,12 +7597,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bibi-skills {
-  padding: 7em 0;
+  padding: 2em 0;
   background: #fafafa;
 }
 @media screen and (max-width: 768px) {
   #bibi-skills {
-    padding: 4em 0;
+    padding: 6em 0;
   }
 }
 #bibi-skills .bibi-skill {
@@ -7848,8 +7849,13 @@ pre {
 }
 
 #bibi-contact {
-  padding: 5em 0;
+  padding: 2em 0;
   line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  #bibi-contact {
+    padding: 6em 0;
+  }
 }
 
 .bibi-contact-icon {
@@ -8201,7 +8207,7 @@ pre {
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Rockwell", arial, sans-serif;
+  font-family: "Robo Slab", arial, sans-serif;
 }
 .owl-carousel-fullwidth .item .bibi-owl-text .bibi-sub-lead {
   font-size: 30px;
