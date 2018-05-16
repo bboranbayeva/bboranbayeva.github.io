@@ -78,18 +78,19 @@
   line-height: 34px;
   font-weight: 300;
 }
-#bibi-projects .bibi-projects-item.bibi-img-right .bibi-projects-figure {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  bottom: 0;
+#bibi-projects .bibi-projects-item .bibi-projects-figure {
+  padding-top: 50px;
 }
+#bibi-projects .bibi-projects-item .bibi-projects-figure img {
+  height: 200px;
+  float: left;
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
-  #bibi-projects .bibi-projects-item.bibi-img-right .bibi-projects-figure {
-    position: relative;
-    top: auto;
-    bototm: auto;
-    height: 400px;
+  #bibi-projects .bibi-projects-item .bibi-projects-figure {
+    padding-top: 0;
+    height: auto;
   }
 }
 
