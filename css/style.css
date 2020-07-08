@@ -7894,26 +7894,18 @@ pre {
 }
 
 .bibi-contact-icon {
-  background: #ddd;
-  border-radius: 3em;
+  background: #f3a175;
+  border-radius: 2em;
 
   display: inline-block;
   font-weight: bold;
-  font-size: 10px;
-  line-height: 6em;
-  width: 6.0em;
+  
+  line-height: 4em;
+  width: 4.0em;
   color: #fbfbfb;
   margin-right: 5px;
   margin-bottom: 15px;
   text-align: center;
-}
-
-.bibi-contact-icon:hover {
-  background-color: #ccc;
-
-  border: 2px solid #eee;
-
-  transition: border 0.6s linear;
 }
 
 .bibi-contact-identifier {
