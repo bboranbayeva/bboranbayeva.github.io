@@ -7582,10 +7582,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #bibi-team .bibi-staff {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #bibi-team .bibi-staff figure {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #bibi-team .bibi-staff h3 {
   font-size: 18px;
@@ -7594,6 +7594,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+/*
 #bibi-team .bibi-staff h3:after {
   content: "";
   position: absolute;
@@ -7603,6 +7604,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   background: #f3a175;
 }
+*/
 #bibi-team .bibi-staff .bibi-social a {
   color: #ccc;
 }
@@ -7658,6 +7660,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 5px;
   margin-bottom: 15px;
   text-align: center;
+}
+
+
+#bibi-interests .flex-container {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #bibi-contact {
