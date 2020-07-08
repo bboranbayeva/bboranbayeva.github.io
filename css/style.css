@@ -7456,14 +7456,17 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .bibi-intro .intro-lead {
   color: #fff;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 40px;
   font-family: "Robo Slab", arial, sans-serif;
+}
+
+.bibi-intro #getInTouch {
+  color: #fff;
 }
 
 .section-lead {
@@ -7607,9 +7610,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-#bibi-skills {
+#bibi-summary {
   padding: 2em 0;
   background: #fafafa;
+}
+
+#bibi-skills {
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #bibi-skills {
@@ -7635,6 +7642,22 @@ h1, h2, h3, h4, h5, h6 {
 #bibi-skills .bibi-skill .bibi-desc h3 {
   margin-top: 0;
   font-size: 18px;
+}
+
+.bibi-skill-item {
+  background: #f3a175;
+  border-radius: 3em;
+
+  display: inline-block;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 #bibi-contact {
@@ -7876,7 +7899,7 @@ pre {
 
   display: inline-block;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 6em;
   width: 6.0em;
   color: #fbfbfb;

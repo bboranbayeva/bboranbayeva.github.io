@@ -132,19 +132,6 @@
 		$('#bibi-main-nav #bibi-navbar').find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
 	};
 
-	// Get in Touch navigation
-	var getInTouch = function(section) {
-		$('#getInTouch').click(function(event){
-			var section = $(this).data('nav-section');
-				if ( $('div[data-section="' + section + '"]').length ) {
-					$('html, body').animate({
-			        	scrollTop: $('div[data-section="' + section + '"]').offset().top - topVal
-			    	}, 500);
-			   }
-			   event.preventDefault();
-		}
-	};
-
 	var navigationSection = function() {
 		var $section = $('div[data-section]');
 		$section.waypoint(function(direction) {
@@ -172,7 +159,6 @@
 		featureIconsWayPoint();
 		clickMenu();
 		navActive();
-		getInTouch();
 		navigationSection();
 
 	});
